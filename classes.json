@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Biology",
+    "blocks": ["A", "B"]
+  },
+  {
+    "title": "Algebra II",
+    "blocks": ["C", "D"]
+  },
+  {
+    "title": "World History",
+    "blocks": ["A", "D"]
+  },
+  {
+    "title": "Chemistry",
+    "blocks": ["B", "C"]
+  },
+  {
+    "title": "English Literature",
+    "blocks": ["A", "C"]
+  },
+  {
+    "title": "Physical Education",
+    "blocks": ["D"]
+  },
+  {
+    "title": "Calculus AB",
+    "blocks": ["A", "B"]
+  },
+  {
+    "title": "Psychology",
+    "blocks": ["C"]
+  },
+  {
+    "title": "Art History",
+    "blocks": ["B", "D"]
+  },
+  {
+    "title": "Computer Science",
+    "blocks": ["A", "D"]
+  }
+]

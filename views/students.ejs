@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Schedules</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Student Schedules</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Student</th>
+        <th>A Block</th>
+        <th>B Block</th>
+        <th>C Block</th>
+        <th>D Block</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% students.forEach((student) => { %>
+        <tr>
+          <td><%= student.name %></td>
+          <% for (let i = 0; i < 4; i++) { %>
+            <td>
+              <a href="/class/<%= student.classes[i]._id %>">
+                <%= student.classes[i].title %>
+              </a>
+            </td>
+          <% } %>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+  <% if (page > 1) { %>
+    <a href="/students/<%= page - 1 %>">Display Last 10 Students</a><br>
+  <% } %>
+  <% if (page < lastPage) { %>
+    <a href="/students/<%= page + 1 %>">Display Next 10 Students</a>
+  <% } %>
+</body>
+</html>

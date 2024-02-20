@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Enrollment</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Students Enrolled in <%= selectedClass.title %></h1>
+  <ul>
+    <% selectedClass.students.forEach(student => { %>
+      <li><%= student.name %></li>
+    <% }); %>
+  </ul>
+  <a href="/">Return to All Students</a>
+</body>
+</html>
